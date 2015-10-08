@@ -14,6 +14,8 @@
 		727179F01BC6DA3200889303 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 727179EE1BC6DA3200889303 /* Main.storyboard */; };
 		727179F21BC6DA3200889303 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 727179F11BC6DA3200889303 /* Assets.xcassets */; };
 		727179F51BC6DA3200889303 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 727179F31BC6DA3200889303 /* LaunchScreen.storyboard */; };
+		727179FD1BC6DC4A00889303 /* Bird.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727179FC1BC6DC4A00889303 /* Bird.swift */; settings = {ASSET_TAGS = (); }; };
+		727179FF1BC6DCC400889303 /* Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727179FE1BC6DCC400889303 /* Background.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		727179F11BC6DA3200889303 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		727179F41BC6DA3200889303 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		727179F61BC6DA3200889303 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		727179FC1BC6DC4A00889303 /* Bird.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bird.swift; sourceTree = "<group>"; };
+		727179FE1BC6DCC400889303 /* Background.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Background.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 				727179E81BC6DA3200889303 /* GameScene.sks */,
 				727179EA1BC6DA3200889303 /* GameScene.swift */,
 				727179EC1BC6DA3200889303 /* GameViewController.swift */,
+				727179FC1BC6DC4A00889303 /* Bird.swift */,
+				727179FE1BC6DCC400889303 /* Background.swift */,
 				727179EE1BC6DA3200889303 /* Main.storyboard */,
 				727179F11BC6DA3200889303 /* Assets.xcassets */,
 				727179F31BC6DA3200889303 /* LaunchScreen.storyboard */,
@@ -142,7 +148,9 @@
 			files = (
 				727179EB1BC6DA3200889303 /* GameScene.swift in Sources */,
 				727179ED1BC6DA3200889303 /* GameViewController.swift in Sources */,
+				727179FD1BC6DC4A00889303 /* Bird.swift in Sources */,
 				727179E71BC6DA3200889303 /* AppDelegate.swift in Sources */,
+				727179FF1BC6DCC400889303 /* Background.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

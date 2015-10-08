@@ -2,41 +2,41 @@
 //  GameScene.swift
 //  Flappy Bird-Clone
 //
-//  Created by gustavo.freitas2 on 10/8/15.
+//  Created by Gustavo F Oliveira on 10/8/15.
 //  Copyright (c) 2015 __MyCompanyName__. All rights reserved.
 //
 
 import SpriteKit
 
 class GameScene: SKScene {
+    
+    private var background: Background!
+    private var bird: Bird!
+    
     override func didMoveToView(view: SKView) {
-        /* Setup your scene here */
-        let myLabel = SKLabelNode(fontNamed:"Chalkduster")
-        myLabel.text = "Hello, World!";
-        myLabel.fontSize = 45;
-        myLabel.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame));
         
-        self.addChild(myLabel)
+        
+        background = Background(frame: self.frame)
+        for node in background.getNode() {
+            addChild(node)
+        }
+        
+        bird = Bird(frame: self.frame)
+        addChild(bird.getNode())
+        
+        let ground = SKNode()
+        ground.position = CGPointMake(0, 0)
+        ground.physicsBody = SKPhysicsBody(rectangleOfSize: CGSizeMake(self.frame.size.width, 1))
+        ground.physicsBody!.dynamic = false
+        
+        addChild(ground)
+       
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-       /* Called when a touch begins */
+       
+        bird.onTap()
         
-        for touch in touches {
-            let location = touch.locationInNode(self)
-            
-            let sprite = SKSpriteNode(imageNamed:"Spaceship")
-            
-            sprite.xScale = 0.5
-            sprite.yScale = 0.5
-            sprite.position = location
-            
-            let action = SKAction.rotateByAngle(CGFloat(M_PI), duration:1)
-            
-            sprite.runAction(SKAction.repeatActionForever(action))
-            
-            self.addChild(sprite)
-        }
     }
    
     override func update(currentTime: CFTimeInterval) {

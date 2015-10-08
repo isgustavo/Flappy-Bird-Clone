@@ -1,9 +1,9 @@
 //
-//  AppDelegate.swift
+//  GameScene.swift
 //  Flappy Bird-Clone
 //
-//  Created by gustavo.freitas2 on 10/8/15.
-//
+//  Created by Gustavo F Oliveira on 10/8/15.
+//  Copyright (c) 2015 __MyCompanyName__. All rights reserved.
 //
 
 import UIKit
